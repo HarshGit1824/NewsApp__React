@@ -1,15 +1,21 @@
 import React, { Component } from "react";
 
-
 export class NavBar extends Component {
-
   render() {
     return (
       <div>
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
+
+              <img
+                src="favicon1.png"
+                alt="newsBite logo"
+                width="40"
+                height="40"
+              />
+
           <div className="container-fluid">
             <a className="navbar-brand" href="/">
-            NewsBite
+              NewsBite
             </a>
             <button
               className="navbar-toggler"
@@ -37,8 +43,6 @@ export class NavBar extends Component {
                     About
                   </a>
                 </li>
-                
-                
               </ul>
             </div>
           </div>
