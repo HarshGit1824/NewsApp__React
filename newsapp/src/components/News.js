@@ -24,7 +24,7 @@ export class News extends Component {
   }
 
   handlePrevClick = async () => {
-    console.log("Previous");
+    // console.log("Previous");
     let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=10b79f44a3d7408db2e9b5f3e2a8a99a&page=${
       this.state.page - 1
     }&pageSize=20`;
@@ -37,7 +37,7 @@ export class News extends Component {
     });
   };
   handleNextClick = async () => {
-    console.log("Next");
+    // console.log("Next");
     if (this.state.page + 1 > Math.ceil(this.state.totalResults / 20)) {
     } else {
       let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=10b79f44a3d7408db2e9b5f3e2a8a99a&page=${
@@ -56,7 +56,7 @@ export class News extends Component {
   render() {
     return (
       <div className="container my-3">
-        <h2>NewsBite - Top Headlines</h2>
+        <h1 className="text-center">NewsBite &mdash; Top Headlines</h1>
         <div className="row">
           {this.state.articles.map((element) => {
             return (
@@ -81,12 +81,14 @@ export class News extends Component {
           >
             ⏮️ Previous
           </button>
+
           <button
+          disabled={this.state.page + 1 > Math.ceil(this.state.totalResults / 20)}
             type="button"
             className="btn btn-dark mx-2"
             onClick={this.handleNextClick}
           >
-            Next ⏭️{" "}
+            Next ⏭️
           </button>
         </div>
       </div>

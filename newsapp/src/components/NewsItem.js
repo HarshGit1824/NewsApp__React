@@ -8,7 +8,7 @@ export class NewsItem extends Component {
       <div className="my-3">
         <div className="card" style={{ width: "18rem" }}>
           <img
-            src={!imageUrl?"https://techcrunch.com/wp-content/uploads/2024/05/ipad-noplay.png?resize=1200,675":imageUrl}
+            src={!imageUrl?"https://media.istockphoto.com/id/1313303632/video/breaking-news-template-intro-for-tv-broadcast-news-show-program-with-3d-breaking-news-text.jpg?s=640x640&k=20&c=S0dTZp37XKVcCAnoguMnRatvv4Nkp2cjmA5aYOOrJs8=":imageUrl}
             alt=""
           />
           <div className="card-body">

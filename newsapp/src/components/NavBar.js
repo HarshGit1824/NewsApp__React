@@ -7,7 +7,7 @@ export class NavBar extends Component {
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
 
               <img
-                src="favicon1.png"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1TkomunZDeJey7-o6mPI5Lie-D5JSgaEV0kxfLSs0_WD50XXeaYcA7brZJQNaSbt9ZI4&usqp=CAU"
                 alt="newsBite logo"
                 width="40"
                 height="40"
